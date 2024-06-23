@@ -1,0 +1,52 @@
+.team
+  display: flex
+  background-color: #ffe9d9
+  width: 1470px
+  height: 280px
+  position: relative
+  overflow: hidden
+  p
+    color: #B9C9EE
+
+.button
+  background-color: #ffe9d9
+  border: none
+  padding: 36px
+  cursor: pointer
+  z-index: 1
+
+.contentBlocksContainer
+  display: flex
+  width: 100%
+  position: relative
+  transform-style: preserve-3d
+
+.contentBlockWrapper
+  width: 275px
+  height: 270px
+  margin: 0 15px
+  text-align: center
+  position: absolute
+  opacity: 0
+  pointer-events: none
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
+
+  &.active
+    opacity: 1
+    pointer-events: auto
+    transform: translateX(0)
+
+.contentBlock
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100%
+
+  img
+    width: 200px
+    height: 128px
+  h3
+    margin-top: 20px
+  p
+    margin-top: 10px
